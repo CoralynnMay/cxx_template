@@ -19,6 +19,8 @@ set(SOURCE_MAIN_TEST
     src/main_test.cpp
 )
 
+include_directories(lib/doctest)
+
 add_executable(${PROG} ${SOURCE_MAIN} ${SOURCES})
 target_compile_definitions(${PROG} PUBLIC DOCTEST_CONFIG_DISABLE)
 
