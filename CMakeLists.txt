@@ -20,6 +20,7 @@ set(SOURCE_MAIN_TEST
 )
 
 include_directories(lib/doctest)
+include_directories(lib/spdlog)
 
 add_executable(${PROG} ${SOURCE_MAIN} ${SOURCES})
 target_compile_definitions(${PROG} PUBLIC DOCTEST_CONFIG_DISABLE)
